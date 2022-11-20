@@ -1,0 +1,6 @@
+.desktop-nav {
+  justify-content: space-between;
+  padding: var(--nav-padding);
+}
+
+

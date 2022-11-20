@@ -1,0 +1,16 @@
+.hamburger-btn {
+  background: var(--black);
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: var(--nav-padding);
+}
+
+.hamburger-btn > span {
+  background: var(--primary-color);
+  height: 3px;
+  width: 35px;
+  display: block;
+  margin: 5px 0;
+}
