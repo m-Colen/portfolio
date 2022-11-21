@@ -1,12 +1,17 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
 nav a {
-  text-decoration: none;
-  border-bottom: 3px solid transparent;
   transition: 0.5s all;
 }
 
 nav a:hover {
-  color: var(--primary-color);
-  border-bottom: 3px solid var(--primary-color);
+  color: orange;
 }
 
 .nav-links {

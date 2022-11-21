@@ -1,8 +1,12 @@
 import React from "react";
 
-export default function MobileNav({display}) {
+export default function MobileNav({ display }) {
   return (
-    <ul style={{display}} className="mobile-nav">
+    <ul
+      style={{ display }}
+      id="mobile-nav"
+      className="mobile-nav slide-in-left"
+    >
       <li>
         <a href="#about" title="Learn more about me">
           About me
