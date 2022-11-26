@@ -6,16 +6,12 @@
   align-items: center;
   gap: 20px;
   font-size: 2rem;
-  background: var(--white);
+  background: rgb(19, 19, 19);
   margin: 0;
 }
 
 .mobile-nav a {
-  color: var(--black);
-}
-
-.mobile-nav a:hover {
-  color: var(--secondary-color);
+  color: var(--white);
 }
 
 /* Animation for MobileNav component entrance */

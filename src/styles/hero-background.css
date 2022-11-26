@@ -1,0 +1,258 @@
+/***
+Space animation 
+***/
+
+.space-display {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Stars */
+
+.star {
+  position: absolute;
+  height: 1.75px;
+  width: 1.75px;
+  background: var(--white);
+  border-radius: 50%;
+  animation: stars-anim 9s infinite linear;
+  --time: 9;
+  --delay: calc(var(--time) / 40);
+}
+
+@keyframes stars-anim {
+  0% {
+    opacity: 1;
+    transform: translateY(0vh);
+  }
+  35% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(100vh);
+  }
+}
+
+.star-1 {
+  animation-delay: 0s;
+  left: 11%;
+}
+
+.star-2 {
+  animation-delay: calc(-1 * var(--delay) * 4s);
+  left: 76%;
+}
+
+.star-3 {
+  animation-delay: calc(-1 * var(--delay) * 34s);
+  left: 5%;
+}
+
+.star-4 {
+  animation-delay: calc(-1 * var(--delay) * 27s);
+  left: 95%;
+}
+
+.star-5 {
+  animation-delay: calc(-1 * var(--delay) * 39s);
+  left: 7.5%;
+}
+
+.star-6 {
+  animation-delay: calc(-1 * var(--delay) * 9s);
+  left: 92.5%;
+}
+
+.star-7 {
+  animation-delay: calc(-1 * var(--delay) * 33s);
+  left: 10%;
+}
+
+.star-8 {
+  animation-delay: calc(-1 * var(--delay) * 3s);
+  left: 90%;
+}
+
+.star-9 {
+  animation-delay: calc(-1 * var(--delay) * 28s);
+  left: 12.5%;
+}
+
+.star-10 {
+  animation-delay: calc(-1 * var(--delay) * 35s);
+  left: 87.5%;
+}
+
+.star-11 {
+  animation-delay: calc(-1 * var(--delay) * 11s);
+  left: 15%;
+}
+
+.star-12 {
+  animation-delay: calc(-1 * var(--delay) * 5s);
+  left: 85%;
+}
+
+.star-13 {
+  animation-delay: calc(-1 * var(--delay) * 37s);
+  left: 17.5%;
+}
+
+.star-14 {
+  animation-delay: calc(-1 * var(--delay) * 7s);
+  left: 82.5%;
+}
+
+.star-15 {
+  animation-delay: calc(-1 * var(--delay) * 17s);
+  left: 20%;
+}
+
+.star-15 {
+  animation-delay: calc(-1 * var(--delay) * 31s);
+  left: 80%;
+}
+
+.star-16 {
+  animation-delay: calc(-1 * var(--delay) * 18s);
+  left: 22.5%;
+}
+
+.star-17 {
+  animation-delay: calc(-1 * var(--delay) * 40s);
+  left: 77.5%;
+}
+
+.star-18 {
+  animation-delay: calc(-1 * var(--delay) * 10s);
+  left: 25%;
+}
+
+.star-19 {
+  animation-delay: calc(-1 * var(--delay) * 22s);
+  left: 75%;
+}
+
+.star-20 {
+  animation-delay: calc(-1 * var(--delay) * 13s);
+  left: 27.5%;
+}
+
+.star-21 {
+  animation-delay: calc(-1 * var(--delay) * 21s);
+  left: 72.5%;
+}
+
+.star-22 {
+  animation-delay: calc(-1 * var(--delay) * 14s);
+  left: 30%;
+}
+
+.star-23 {
+  animation-delay: calc(-1 * var(--delay) * 2s);
+  left: 70%;
+}
+
+.star-24 {
+  animation-delay: calc(-1 * var(--delay) * 26s);
+  left: 32.5%;
+}
+
+.star-25 {
+  animation-delay: calc(-1 * var(--delay) * 1s);
+  left: 67.5%;
+}
+
+.star-26 {
+  animation-delay: calc(-1 * var(--delay) * 6s);
+  left: 35%;
+}
+
+.star-27 {
+  animation-delay: calc(-1 * var(--delay) * 15s);
+  left: 65%;
+}
+
+.star-28 {
+  animation-delay: calc(-1 * var(--delay) * 19s);
+  left: 37.5%;
+}
+
+.star-29 {
+  animation-delay: calc(-1 * var(--delay) * 25s);
+  left: 62.5%;
+}
+
+.star-30 {
+  animation-delay: calc(-1 * var(--delay) * 12s);
+  left: 40%;
+}
+
+.star-31 {
+  animation-delay: calc(-1 * var(--delay) * 23s);
+  left: 60%;
+}
+
+.star-32 {
+  animation-delay: calc(-1 * var(--delay) * 36s);
+  left: 42.5%;
+}
+
+.star-33 {
+  animation-delay: calc(-1 * var(--delay) * 24s);
+  left: 57.5%;
+}
+
+.star-34 {
+  animation-delay: calc(-1 * var(--delay) * 8s);
+  left: 45%;
+}
+
+.star-35 {
+  animation-delay: calc(-1 * var(--delay) * 20s);
+  left: 55%;
+}
+
+.star-36 {
+  animation-delay: calc(-1 * var(--delay) * 16s);
+  left: 47.5%;
+}
+
+.star-37 {
+  animation-delay: calc(-1 * var(--delay) * 32s);
+  left: 52.5%;
+}
+
+.star-38 {
+  animation-delay: calc(-1 * var(--delay) * 29s);
+  left: 50%;
+}
+
+.star-39 {
+  animation-delay: calc(-1 * var(--delay) * 38s);
+  left: 33%;
+}
+
+.star-40 {
+  animation-delay: calc(-1 * var(--delay) * 30s);
+  left: 11%;
+}
+
+@media only screen and (max-width: 750px) {
+  .star-1,
+  .star-2,
+  .star-3,
+  .star-4,
+  .star-5 {
+    display: none;
+  }
+}

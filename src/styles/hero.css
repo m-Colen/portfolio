@@ -1,69 +1,17 @@
 .hero {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   overflow: hidden;
-  outline: 1px solid red;
 }
 
-.hero > div {
-  outline: 1px solid blue;
+.hero__text {
+  text-align: center;
 }
 
-.hero__typewriter p {
-  font-size: 1.5rem;
-  overflow: hidden;
-  border-right: 0.15em solid #ddd;
-  white-space: nowrap;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em;
+.hero__text > p {
+  font-size: 1.75rem;
+  opacity: .8;
 }
 
-.hero__typewriter--delayOne {
-  animation: typing 5s steps(30, end) 1, blink-caret 0.5s step-end infinite;
-}
-
-.hero__typewriter--delayTwo {
-  opacity: 0;
-  animation: typing 5s 4s steps(30, end) 1, blink-caret 0.5s step-end infinite,
-    unhidden 0.1s;
-}
-
-.hero__typewriter--delayThree {
-  opacity: 0;
-  animation: typing 5s 8s steps(30, end) 1, blink-caret 0.5s step-end infinite,
-    unhidden 0.1s;
-}
-
-/* The typing effect */
-
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  50% {
-    width: 50%;
-  }
-}
-
-/* The typewriter cursor effect */
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #ddd;
-  }
-}
-
-@keyframes unhidden {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
