@@ -6,6 +6,10 @@ nav {
   z-index: 99;
 }
 
+nav li {
+  list-style-type: none;
+}
+
 nav a {
   transition: 0.5s all;
 }

@@ -1,0 +1,38 @@
+#contact {
+  position: relative;
+}
+
+.contact {
+  background: var(--white);
+  color: var(--black);
+}
+
+.contact button {
+  color: var(--white);
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.contact-form {
+  text-align: left;
+}
+
+#contact input,
+#contact label,
+#contact textarea {
+  display: block;
+  border-radius: 4px;
+  margin: var(--general-padding);
+  width: 80vw;
+  max-width: 550px;
+  box-sizing: border-box;
+}
+
+#contact input,
+#contact textarea {
+  padding: 0.75rem;
+}

@@ -32,7 +32,7 @@ export default function Navbar() {
         bottomAnimation={hamBtnBottom}
         expanded={expanded}
       />
-      <MobileNav display={display} />
+      <MobileNav display={display} onClick={handleClick} />
     </nav>
   );
 }

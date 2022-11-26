@@ -1,0 +1,13 @@
+footer {
+  padding: var(--nav-padding);
+}
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer a:hover {
+  color: var(--primary-color);
+}

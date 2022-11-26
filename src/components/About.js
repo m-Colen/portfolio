@@ -2,8 +2,33 @@ import React from "react";
 import Hero from "../images/hero.jpg";
 
 export default function About() {
+  const techStack = [
+    "JavaScript",
+    "CSS",
+    "HTML",
+    "Git",
+    "GitHub",
+    "Command Line",
+    "Mocha",
+    "Figma",
+  ];
+  const techStackObjs = techStack.map((skill, index) => {
+    return {
+      id: index,
+      skill: skill,
+    };
+  });
+
+  const currentlyLearning = ["React", "Photoshop", "Illustrator"];
+  const currentlyLearningObjs = currentlyLearning.map((skill, index) => {
+    return {
+      id: index,
+      skill: skill,
+    };
+  });
   return (
     <section id="about">
+      <div className="divider divider--black divider--left"></div>
       <h2>About Me</h2>
       <div className="about">
         <div className="about-wrapper">
@@ -12,32 +37,29 @@ export default function About() {
           </div>
           <div className="about__details">
             <ul>
-              <li>
-                <h3>Things I Love:</h3>
-                <ul>
-                  <li>Front-end web development</li>
-                  <li>Electric guitar (I love Fender offset guitars)</li>
-                  <li>Classic rock</li>
-                  <li>Rocket League</li>
-                </ul>
+              <li key="0">
+                <p>
+                  Hi, I'm Matt. I'm a web developer & designer based in
+                  Missouri. I currently work for the State as an operational
+                  excellence (Op-Ex) manager. Thus, I have a lot of expertise in
+                  creating solutions that provide a good user experience.
+                </p>
+                <hr></hr>
               </li>
-              <li>
+              <li key="1">
                 <h3>Tech Stack:</h3>
                 <ul>
-                  <li>JavaScript (Vanilla)</li>
-                  <li>CSS</li>
-                  <li>HTML</li>
-                  <li>Git</li>
-                  <li>GitHub</li>
-                  <li>Command Line (Git Bash)</li>
-                  <li>Mocha</li>
+                  {techStackObjs.map((skill) => {
+                    return <li key={skill.id}>{skill.skill}</li>;
+                  })}
                 </ul>
               </li>
-              <li>
-                <h3>Currently Learning/Completing:</h3>
+              <li key="2">
+                <h3>Currently Learning:</h3>
                 <ul>
-                  <li>React</li>
-                  <li>CodeCademy - Front End Engineer Certificate</li>
+                  {currentlyLearningObjs.map((skill) => {
+                    return <li key={skill.id}>{skill.skill}</li>;
+                  })}
                 </ul>
               </li>
             </ul>
@@ -46,8 +68,12 @@ export default function About() {
         <div className="about__links">
           <div className="about__links--internal">
             <ul>
-              <li>
-                <a class="btn btn-primary" href="#contact" title="Contact me">
+              <li key="0">
+                <a
+                  className="btn btn-primary"
+                  href="#contact"
+                  title="Contact me"
+                >
                   Say Hello
                 </a>
               </li>
@@ -55,7 +81,7 @@ export default function About() {
           </div>
           <div className="about__links--external">
             <ul>
-              <li>
+              <li key="0">
                 <a
                   className="nav-links--external"
                   href="https://www.linkedin.com/in/matthew-colen-061650209/"
@@ -67,7 +93,7 @@ export default function About() {
                   <i className="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
               </li>
-              <li>
+              <li key="1">
                 <a
                   className="nav-links--external"
                   href="https://github.com/m-Colen"
