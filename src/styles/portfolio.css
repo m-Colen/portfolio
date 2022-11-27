@@ -15,7 +15,8 @@
 }
 
 .card {
-  border: 3px solid white;
+  background: var(--white);
+  color: var(--black);
   border-radius: var(--soft-square-radius);
 }
 

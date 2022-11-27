@@ -15,7 +15,8 @@
 }
 
 .about__details {
-  border: 3px solid var(--secondary-color);
+  background: var(--black);
+  color: var(--white);
 }
 
 .about__images {
@@ -38,6 +39,7 @@
 
 .about__images figcaption {
   padding: var(--card-padding);
+  font-weight: bold;
 }
 
 .about__details {
@@ -61,7 +63,7 @@
 
 @media only screen and (min-width: 900px) {
   .about-wrapper {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr .75fr;
     gap: 25px;
   }
   .about__images,

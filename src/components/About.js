@@ -37,7 +37,8 @@ export default function About() {
               <img src={Hero} alt="Matt Colen with trees in the background" />
               <figcaption>
                 Hi, my name is Matt. I'm a web developer and designer based in
-                Missouri. I create accessible, responsive, beautiful and user centered designs on the web.  
+                Missouri. I create accessible, responsive, beautiful and user
+                centered designs on the web.
               </figcaption>
             </figure>
           </div>
