@@ -35,4 +35,5 @@ form {
 #contact input,
 #contact textarea {
   padding: 0.75rem;
+  font-size: 1rem;
 }

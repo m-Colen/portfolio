@@ -28,7 +28,7 @@ export default function About() {
   });
   return (
     <section id="about">
-      <div className="divider divider--black divider--left"></div>
+      <div className="divider divider--white"></div>
       <h2>About Me</h2>
       <div className="about">
         <div className="about-wrapper">

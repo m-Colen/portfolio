@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact() {
   return (
     <section className="contact" id="contact">
-      <div className="divider divider--black divider--left"></div>
+      <div className="divider divider--white"></div>
       <h2>Contact</h2>
       <div>
         <form name="contact" method="POST" data-netlify="true">

@@ -30,6 +30,11 @@ nav a:hover {
   left: 5px;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 @media only screen and (min-width: 900px) {
   .hamburger-btn {
     display: none;

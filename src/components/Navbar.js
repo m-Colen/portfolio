@@ -20,6 +20,7 @@ export default function Navbar() {
       ? setHamBtnBottom("expanded-bottom")
       : setHamBtnBottom("");
     expanded === "false" ? setExpanded("true") : setExpanded("false");
+    document.body.classList.toggle("stop-scrolling");
   };
 
   return (

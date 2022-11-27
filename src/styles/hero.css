@@ -11,7 +11,15 @@
 }
 
 .hero__text > p {
-  font-size: 1.75rem;
-  opacity: .7;
+  font-size: 1.25rem;
+  opacity: 0.7;
 }
 
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .hero__text > p {
+    font-size: 1.75rem;
+  }
+}
