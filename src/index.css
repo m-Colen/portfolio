@@ -1,4 +1,3 @@
-@import url("./styles/app.css");
 @import url("./styles/header.css");
 @import url("./styles/navbar.css");
 @import url("./styles/desktop-nav.css");
@@ -6,7 +5,6 @@
 @import url("./styles/mobile-nav.css");
 @import url("./styles/hero.css");
 @import url("./styles/hero-background.css");
-@import url("./styles/main.css");
 @import url("./styles/about.css");
 @import url("./styles/portfolio.css");
 @import url("./styles/contact.css");
@@ -19,7 +17,6 @@
 }
 
 html {
-  --app-height: 100%;
   font-size: 120%;
   scroll-behavior: smooth;
   /* Fonts */
@@ -37,23 +34,12 @@ html {
   --general-padding: 0.5vh 0;
   --nav-padding: 2vh 18%;
   --header-padding: 0 18%;
-  --section-padding: 12vh 18%;
+  --section-padding: 7vh 18%;
   --card-padding: 25px;
-  --radius: 30px;
   --soft-square-radius: 10px;
   --soft-top-radius: 10px 10px 0 0;
-  --soft-left-radius: 10px 0 0 10px;
+  --soft-bottom-radius: 0 0 10px 10px;
   --paragraph-line-height: 1.5;
-}
-
-html,
-body {
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    height: var(--app-height);
 }
 
 body {
@@ -90,13 +76,19 @@ h2 {
 }
 
 h1 {
-  text-shadow: 0 0 5px var(--black);
   line-height: 0.95;
+}
+
+h2 {
+  margin-bottom: 7vh;
+}
+
+h3 {
+  margin-bottom: 1vh;
 }
 
 h3 {
   margin-top: 0;
-  margin-bottom: 1vh;
   font-size: 1.3rem;
 }
 
@@ -113,10 +105,7 @@ li {
 a {
   color: var(--white);
   cursor: pointer;
-}
-
-a:focus {
-  border-bottom: 1px solid var(--white);
+  transition: 0.5s all;
 }
 
 .external-icon {
@@ -181,8 +170,9 @@ a:focus {
   }
 }
 
-.divider {
-  height: 100%;
+.main-divider {
+  background-image: url("./images/main-divider.svg");
+  height: 7vh;
   width: 100%;
   position: absolute;
   top: 0;
@@ -190,12 +180,20 @@ a:focus {
   background-repeat: repeat-x;
 }
 
-.divider--white {
-  background-image: url("./images/waves-white.svg");
+.divider {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
 }
 
-.divider--black {
-  background-image: url("./images/waves-black.svg");
+.divider > div {
+  height: 2.5vh;
+  width: 30%;
+  background: var(--primary-color);
+  border-radius: var(--soft-bottom-radius);
 }
 
 .hidden {
@@ -211,7 +209,7 @@ a:focus {
   html {
     --nav-padding: 2vh 8%;
     --header-padding: 0 8%;
-    --section-padding: 12vh 8%;
+    --section-padding: 7vh 8%;
   }
 }
 
@@ -219,6 +217,6 @@ a:focus {
   html {
     --nav-padding: 2vh 4%;
     --header-padding: 0 4%;
-    --section-padding: 12vh 4%;
+    --section-padding: 7vh 4%;
   }
 }

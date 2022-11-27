@@ -27,26 +27,24 @@ export default function About() {
     };
   });
   return (
-    <section id="about">
-      <div className="divider divider--white"></div>
+    <section className="about" id="about">
+      <div className="main-divider"></div>
       <h2>About Me</h2>
       <div className="about">
         <div className="about-wrapper">
           <div className="about__images">
-            <img src={Hero} alt="Matt Colen with trees in the background" />
+            <figure>
+              <img src={Hero} alt="Matt Colen with trees in the background" />
+              <figcaption>
+                Hi, my name is Matt. I'm a web developer and designer based in
+                Missouri. I'm passionate about creating designs that provide an
+                exceptional user experience.
+              </figcaption>
+            </figure>
           </div>
           <div className="about__details">
             <ul>
               <li key="0">
-                <p>
-                  Hi, I'm Matt. I'm a web developer & designer based in
-                  Missouri. I currently work for the State as an operational
-                  excellence (Op-Ex) manager. Thus, I have a lot of expertise in
-                  creating solutions that provide a good user experience.
-                </p>
-                <hr></hr>
-              </li>
-              <li key="1">
                 <h3>Tech Stack:</h3>
                 <ul>
                   {techStackObjs.map((skill) => {
@@ -54,7 +52,7 @@ export default function About() {
                   })}
                 </ul>
               </li>
-              <li key="2">
+              <li key="1">
                 <h3>Currently Learning:</h3>
                 <ul>
                   {currentlyLearningObjs.map((skill) => {

@@ -5,7 +5,7 @@ footer {
 footer > ul {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
 }
 
 footer a:hover {

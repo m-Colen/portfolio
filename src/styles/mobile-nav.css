@@ -4,14 +4,10 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  font-size: 2rem;
+  gap: 25px;
+  font-size: 1.75rem;
   background: rgb(19, 19, 19);
   margin: 0;
-}
-
-.mobile-nav a {
-  color: var(--white);
 }
 
 /* Animation for MobileNav component entrance */
@@ -46,6 +42,7 @@
   }
 }
 
+/* Hides an open mobile nav menu when the screen width exceeds 900px */
 @media only screen and (min-width: 900px) {
   .mobile-nav {
     display: none !important;

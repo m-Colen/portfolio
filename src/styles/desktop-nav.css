@@ -1,7 +1,7 @@
 .desktop-nav {
   justify-content: space-between;
   padding: var(--nav-padding);
-  background: black;
+  background: var(--black);
   opacity: .9;
 }
 

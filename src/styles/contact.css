@@ -1,8 +1,5 @@
-#contact {
-  position: relative;
-}
-
 .contact {
+  position: relative;
   background: var(--white);
   color: var(--black);
 }
@@ -35,5 +32,5 @@ form {
 #contact input,
 #contact textarea {
   padding: 0.75rem;
-  font-size: 1rem;
+  font-size: 16px;
 }

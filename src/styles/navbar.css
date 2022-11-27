@@ -10,10 +10,6 @@ nav li {
   list-style-type: none;
 }
 
-nav a {
-  transition: 0.5s all;
-}
-
 nav a:hover {
   color: var(--primary-color);
 }
@@ -28,11 +24,6 @@ nav a:hover {
   position: relative;
   top: 3px;
   left: 5px;
-}
-
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
 }
 
 @media only screen and (min-width: 900px) {
