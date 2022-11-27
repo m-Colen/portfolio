@@ -2,8 +2,10 @@
   height: 100vh;
   display: flex;
   flex-flow: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: left;
+  padding: var(--card-padding);
+  padding-top: 100px;
   gap: 25px;
   font-size: 1.75rem;
   background: rgb(19, 19, 19);
