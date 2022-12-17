@@ -198,7 +198,7 @@ a:focus {
   background: var(--alt-color);
   position: absolute;
   top: 0;
-  left: calc(50% - 25px - 8px);
+  left: calc(50% - 33px);
   border: 8px solid #fff;
 }
 
