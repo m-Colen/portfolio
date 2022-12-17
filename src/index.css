@@ -26,7 +26,7 @@ html {
   --white: #fff;
   --black: #000;
   --primary-color: #61a69a;
-  --primary-color--dark: #3B665F;
+  --primary-color--dark: #3b665f;
   --secondary-color: #ffe066;
   --alt-color: #2f3534;
   --highlight-color: #ed7343;
@@ -43,10 +43,13 @@ html {
   --paragraph-line-height: 1.5;
 }
 
+#root {
+  overflow: hidden;
+}
+
 body {
   background: var(--black);
   margin: 0;
-  overflow-x: hidden;
   color: var(--white);
   font-family: var(--body-font);
 }

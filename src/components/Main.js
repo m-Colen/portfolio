@@ -5,10 +5,10 @@ import Contact from './Contact';
 
 export default function Main() {
   return (
-    <div>
+    <main>
       <About />
       <Portfolio />
       <Contact />
-    </div>
+    </main>
   )
 }
