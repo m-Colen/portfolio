@@ -10,7 +10,7 @@
 }
 
 .hamburger-btn > span {
-  background: var(--primary-color);
+  background: var(--highlight-color);
   height: 3px;
   width: 35px;
   display: block;

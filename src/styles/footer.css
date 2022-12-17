@@ -9,5 +9,5 @@ footer > ul {
 }
 
 footer a:hover {
-  color: var(--primary-color);
+  color: var(--highlight-color);
 }

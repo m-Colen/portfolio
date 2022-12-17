@@ -11,7 +11,7 @@ nav li {
 }
 
 nav a:hover {
-  color: var(--primary-color);
+  color: var(--highlight-color);
 }
 
 .nav-links {

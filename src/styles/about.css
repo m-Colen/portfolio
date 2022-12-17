@@ -93,5 +93,5 @@
 }
 
 .about__links--external a:hover {
-  color: var(--primary-color);
+  color: var(--highlight-color);
 }

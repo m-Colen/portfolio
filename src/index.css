@@ -25,17 +25,17 @@ html {
   /* Colors */
   --white: #fff;
   --black: #000;
-  --primary-color: #dc8b87;
-  --primary-color--dark: #dc8b87c4;
-  --secondary-color: #d8dc87;
-  --secondary-color--dark: #d0d56e;
-  --alt-color: #8b87dc;
+  --primary-color: #61a69a;
+  --primary-color--dark: #3B665F;
+  --secondary-color: #ffe066;
+  --alt-color: #2f3534;
+  --highlight-color: #ed7343;
   --link-color: #2997ff;
   /* Spacing */
   --general-padding: 0.5vh 0;
   --nav-padding: 2vh 18%;
   --header-padding: 0 18%;
-  --section-padding: 7vh 18%;
+  --section-padding: 8.5vh 18%;
   --card-padding: 25px;
   --soft-square-radius: 10px;
   --soft-top-radius: 10px 10px 0 0;
@@ -77,11 +77,13 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 2rem;
-  background: var(--primary-color);
-  color: #fff;
+  font-size: 1.8rem;
+  color: #000;
+  max-width: 350px;
+  background: var(--secondary-color);
   border-radius: var(--soft-square-radius);
-  margin-bottom: 7vh;
+  margin: 45px auto;
+  margin-bottom: calc(8.5vh); /* Matches section padding spacing */
 }
 
 h3 {
@@ -127,7 +129,7 @@ button {
 button:focus,
 .btn:focus,
 a:focus {
-  outline: 3px dashed orange;
+  outline: 3px dashed var(--highlight-color);
   outline-offset: 3px;
 }
 
@@ -180,8 +182,8 @@ a:focus {
   justify-content: center;
 }
 
-.divider > div {
-  height: 3vh;
+.divider__primary {
+  height: 25px;
   width: 100%;
 }
 
@@ -189,19 +191,15 @@ a:focus {
   background: var(--alt-color);
 }
 
-.divider__secondary {
-  background: var(--primary-color);
-}
-
 .divider__circle {
-  height: 60px !important;
-  width: 60px !important;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   background: var(--alt-color);
   position: absolute;
-  top: -30px;
-  left: calc(50% - 40px);
-  border: 10px solid #fff;
+  top: 0;
+  left: calc(50% - 25px - 8px);
+  border: 8px solid #fff;
 }
 
 .hidden {
