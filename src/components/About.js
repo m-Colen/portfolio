@@ -30,7 +30,7 @@ export default function About() {
     <section className="about" id="about">
       <div className="divider">
         <div className="divider__primary"></div>
-        <div className="divider__circle"></div>
+        <div className="divider__circle divider__circle--left"></div>
       </div>
       <h2>About Me</h2>
       <div className="about">

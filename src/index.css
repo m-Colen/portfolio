@@ -45,13 +45,14 @@ html {
 
 body {
   background: var(--black);
+  margin: 0;
+  overflow-x: hidden;
   color: var(--white);
   font-family: var(--body-font);
 }
 
 section {
   padding: var(--section-padding);
-  overflow: hidden;
 }
 
 h1,
@@ -195,11 +196,19 @@ a:focus {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background: var(--alt-color);
+  background: var(--primary-color);
   position: absolute;
-  top: 0;
-  left: calc(50% - 33px);
+  top: -16.5px;
   border: 8px solid #fff;
+  filter: drop-shadow(0px 0px 15px black);
+}
+
+.divider__circle--left {
+  left: -25px;
+}
+
+.divider__circle--right {
+  right: -25px;
 }
 
 .hidden {
