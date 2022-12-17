@@ -28,7 +28,11 @@ export default function About() {
   });
   return (
     <section className="about" id="about">
-      <div className="main-divider"></div>
+      <div className="divider">
+        <div className="divider__primary"></div>
+        <div className="divider__secondary"></div>
+        <div className="divider__circle"></div>
+      </div>
       <h2>About Me</h2>
       <div className="about">
         <div className="about-wrapper">
@@ -36,8 +40,8 @@ export default function About() {
             <figure>
               <img src={Hero} alt="Matt Colen with trees in the background" />
               <figcaption>
-                Hi, my name is Matt. I'm a web developer and designer based in
-                Missouri. I create accessible, responsive, beautiful and user
+                Hi, my name is Matt. I'm a web developer & designer based in
+                Missouri. I create accessible, responsive, beautiful, & user
                 centered designs on the web.
               </figcaption>
             </figure>

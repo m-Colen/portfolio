@@ -4,7 +4,8 @@ export default function Contact() {
   return (
     <section className="contact" id="contact">
       <div className="divider">
-        <div></div>
+        <div className="divider__primary"></div>
+        <div className="divider__secondary"></div>
       </div>
       <h2>Contact</h2>
       <div>

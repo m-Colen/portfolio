@@ -3,17 +3,13 @@
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   padding: var(--nav-padding);
   padding-top: 100px;
   gap: 25px;
   font-size: 1.75rem;
   background: rgb(19, 19, 19);
   margin: 0;
-}
-
-.mobile-nav li {
-  margin-left: 25px;
 }
 
 /* Animation for MobileNav component entrance */

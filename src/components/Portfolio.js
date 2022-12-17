@@ -76,14 +76,17 @@ export default function Portfolio() {
   return (
     <section className="portfolio" id="portfolio">
       <div className="divider">
-        <div></div>
+        <div className="divider__primary"></div>
+        <div className="divider__secondary"></div>
       </div>
       <h2>Portfolio</h2>
       <div className="cards">
         {projects.map((project) => {
           return (
             <div className="card">
-              <img src={project.thumbnail} alt={project.name}></img>
+              <div className="card__img">
+                <img src={project.thumbnail} alt={project.name}></img>
+              </div>
               <div className="card__details">
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>

@@ -25,10 +25,11 @@ html {
   /* Colors */
   --white: #fff;
   --black: #000;
-  --primary-color: #8b87dc;
-  --primary-color--dark: #736ed5;
+  --primary-color: #dc8b87;
+  --primary-color--dark: #dc8b87c4;
   --secondary-color: #d8dc87;
   --secondary-color--dark: #d0d56e;
+  --alt-color: #8b87dc;
   --link-color: #2997ff;
   /* Spacing */
   --general-padding: 0.5vh 0;
@@ -69,22 +70,23 @@ p {
   padding: var(--general-padding);
 }
 
-h1,
-h2 {
-  text-align: center;
-  font-size: 2.5rem;
-}
-
 h1 {
+  font-size: 2.5rem;
   line-height: 0.95;
 }
 
 h2 {
+  text-align: center;
+  font-size: 2rem;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: var(--soft-square-radius);
   margin-bottom: 7vh;
 }
 
 h3 {
   margin-bottom: 1vh;
+  line-height: 0.98;
 }
 
 h3 {
@@ -126,7 +128,7 @@ button:focus,
 .btn:focus,
 a:focus {
   outline: 3px dashed orange;
-  outline-offset: 10px;
+  outline-offset: 3px;
 }
 
 .btn {
@@ -170,18 +172,7 @@ a:focus {
   }
 }
 
-.main-divider {
-  background-image: url("./images/main-divider.svg");
-  height: 7vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-repeat: repeat-x;
-}
-
 .divider {
-  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -190,10 +181,27 @@ a:focus {
 }
 
 .divider > div {
-  height: 2.5vh;
-  width: 30%;
+  height: 3vh;
+  width: 100%;
+}
+
+.divider__primary {
+  background: var(--alt-color);
+}
+
+.divider__secondary {
   background: var(--primary-color);
-  border-radius: var(--soft-bottom-radius);
+}
+
+.divider__circle {
+  height: 60px !important;
+  width: 60px !important;
+  border-radius: 50%;
+  background: var(--alt-color);
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 40px);
+  border: 10px solid #fff;
 }
 
 .hidden {

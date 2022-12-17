@@ -20,9 +20,18 @@
   border-radius: var(--soft-square-radius);
 }
 
-.card img {
+.card__img {
   height: 25vh;
+  border: 5px solid #fff;
+  border-radius: var(--soft-top-radius);
+}
+
+.card img {
+  margin-top: 5%;
+  height: 100%;
   width: 100%;
+  display: block;
+  margin: auto;
   object-fit: cover;
   border-radius: var(--soft-top-radius);
 }
