@@ -75,10 +75,6 @@ export default function Portfolio() {
 
   return (
     <section className="portfolio" id="portfolio">
-      <div className="divider">
-        <div className="divider__primary"></div>
-        <div className="divider__circle divider__circle--right"></div>
-      </div>
       <h2>Portfolio</h2>
       <div className="cards">
         {projects.map((project) => {
