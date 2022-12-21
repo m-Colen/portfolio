@@ -12,6 +12,7 @@ export default function Hero() {
         </a>
       </div>
       <HeroBackground />
+      <div className="divider"></div>
     </div>
   );
 }

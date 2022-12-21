@@ -56,7 +56,6 @@ body {
 
 section {
   padding: var(--section-padding);
-  border-radius: var(--soft-square-radius);
 }
 
 h1,
@@ -88,7 +87,7 @@ h2 {
   background: var(--secondary-color);
   border-radius: var(--soft-square-radius);
   margin: 0 auto;
-  margin-bottom: 12vh;
+  margin-bottom: 9vh;
 }
 
 h3 {
@@ -115,6 +114,15 @@ a {
   color: var(--white);
   cursor: pointer;
   transition: 0.5s all;
+}
+
+.divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3vh;
+  width: 100%;
+  background: var(--alt-color);
 }
 
 .external-icon {

@@ -115,6 +115,7 @@ export default function Portfolio() {
           );
         })}
       </div>
+      <div className="divider"></div>
     </section>
   );
 }
